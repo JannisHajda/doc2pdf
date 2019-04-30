@@ -1,0 +1,9 @@
+version: '3'
+services:
+  doc2pdf:
+    container_name: doc2pdf
+    build: .
+    working_dir: /usr/src/app
+    command: python main.py
+    volumes:
+      - ./src:/usr/src/app
