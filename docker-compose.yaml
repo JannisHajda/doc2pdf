@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   doc2pdf:
     container_name: doc2pdf
@@ -7,3 +7,6 @@ services:
     command: python main.py
     volumes:
       - ./src:/usr/src/app
+      - ./input:/input
+      - ./output:/output
+      - ./fonts:/usr/share/fonts
